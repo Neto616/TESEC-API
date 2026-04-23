@@ -18,9 +18,7 @@ return [
 
     "allowed_methods" => ["*"],
 
-    "allowed_origins" => [
-        "https://admin-tesec-front-1c4w-k7wimuve6-ivan-bss-projects.vercel.app",
-    ],
+    "allowed_origins" => ["*"],
 
     "allowed_origins_patterns" => [],
 
