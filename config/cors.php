@@ -14,12 +14,12 @@ return [
     |
     */
 
-    "paths" => ["api/*", "sanctum/csrf-cookie", "iniciar_sesion"],
+    "paths" => ["api/*", "sanctum/csrf-cookie"],
 
     "allowed_methods" => ["*"],
 
     "allowed_origins" => [
-        "https://admin-tesec-front-1c4w-66j9czyea-ivan-bss-projects.vercel.app",
+        "https://admin-tesec-front-1c4w-k7wimuve6-ivan-bss-projects.vercel.app/",
     ],
 
     "allowed_origins_patterns" => [],
@@ -30,5 +30,5 @@ return [
 
     "max_age" => 0,
 
-    "supports_credentials" => true,
+    "supports_credentials" => false,
 ];
