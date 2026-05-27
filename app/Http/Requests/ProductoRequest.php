@@ -27,7 +27,12 @@ class ProductoRequest extends FormRequest
             case "crear":
                 return [
                     "nombre" => ["required", "string", "max:255"],
-                    "descripcion" => ["nullable", "string", "min:0", "max:255"],
+                    "descripcion" => [
+                        "nullable",
+                        "string",
+                        "min:0",
+                        "max:30000",
+                    ],
                     "clave_sat" => ["sometimes", "string", "min:0", "max:255"],
                     "sku" => ["sometimes", "string", "min:0", "max:255"],
                     "marca" => ["sometimes", "string", "min:0", "max:255"],
@@ -64,7 +69,12 @@ class ProductoRequest extends FormRequest
             case "editar":
                 return [
                     "nombre" => ["sometimes", "string", "max:255"],
-                    "descripcion" => ["nullable", "string", "min:0", "max:255"],
+                    "descripcion" => [
+                        "nullable",
+                        "string",
+                        "min:0",
+                        "max:30000",
+                    ],
                     "clave_sat" => ["sometimes", "string", "min:0", "max:255"],
                     "sku" => ["sometimes", "string", "min:0", "max:255"],
                     "marca" => ["sometimes", "string", "min:0", "max:255"],
